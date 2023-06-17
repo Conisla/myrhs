@@ -8,8 +8,8 @@ class Salarie(models.Model):
     last_name = models.CharField(max_length=50,blank=True, null=True)
     phone_number = models.CharField(max_length=50,blank=True, null=True)
     email = models.CharField(max_length=50,blank=True, null=True)
-    email_professional = models.CharField(max_length=50,blank=True, null=True)
-    gender = models.BooleanField(blank=True, null=True)
+    email_personnal = models.CharField(max_length=50,blank=True, null=True)
+    gender = models.CharField(max_length=50,blank=True, null=True)
 
     class Meta:
         managed = False
