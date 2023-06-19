@@ -20,8 +20,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 
 2. Mettre en place la BDD
   Dans pgAdmin créer une database 'myrh' et créer la table salarie comme ceci :
-  
-  ```shell
+     ```shell
    CREATE TABLE salarie(
    id_salarie INT,
    first_name VARCHAR(50),
@@ -33,14 +32,14 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
    PRIMARY KEY(id_salarie )
    );
 
-4. Lancer l'API
+3. Lancer l'API
    ```shell
     cd back
     py manage.py makemigrations
     py manage.py migrate
     py manage.py runserver
 
-5. Lancer le front
+4. Lancer le front
    ```shell
     cd front
     npm i
