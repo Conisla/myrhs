@@ -10,7 +10,7 @@
         <h3 class="text-lg text-gray-900 font-semibold">{{ salarie.id_salarie }}</h3>
         <p class="text-gray-900">{{ salarie.first_name }} {{ salarie.last_name }}</p>
         <p class="text-gray-900">{{ salarie.phone_number || '-' }}</p>
-        <p class="text-gray-900">{{ salarie.email }}</p>
+        <p class="text-gray-900">{{ salarie.email || '-' }}</p>
       </div>
     </button>
 
@@ -39,8 +39,16 @@
           <input v-model="selectedSalarie.phone_number" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
         </div>
         <div>
+          <label class="block text-gray-700 font-semibold">Gender</label>
+          <input v-model="selectedSalarie.gender" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
+        </div>
+        <div>
           <label class="block text-gray-700 font-semibold">Email</label>
           <input v-model="selectedSalarie.email" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-semibold">Email (Personnal)</label>
+          <input v-model="selectedSalarie.email_personnal" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
         </div>
         <div class="flex justify-end">
           <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md">Créer</button>
@@ -69,8 +77,16 @@
           <input v-model="selectedSalarie.phone_number" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
         </div>
         <div>
+          <label class="block text-gray-700 font-semibold">Gender</label>
+          <input v-model="selectedSalarie.gender" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
+        </div>
+        <div>
           <label class="block text-gray-700 font-semibold">Email</label>
           <input v-model="selectedSalarie.email" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-semibold">Email (Personnal)</label>
+          <input v-model="selectedSalarie.email_personnal" type="text" class="border border-gray-300 rounded-md p-2 w-full" />
         </div>
         <div class="flex justify-end">
           <button type="button" class="px-4 py-2 bg-red-500 text-white rounded-md mr-2" @click="deleteSalarie()" v-if="selectedSalarie">Supprimer</button>
