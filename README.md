@@ -13,7 +13,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 
 ## Installation
 
-1. Clonez ce dépôt sur votre machine en utilisant la commande suivante :
+1. Clonez ce repo en utilisant la commande suivante :
 
    ```shell
    git clone https://github.com/Conisla/myrhs.git
