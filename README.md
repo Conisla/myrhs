@@ -16,4 +16,33 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 1. Clonez ce dépôt sur votre machine en utilisant la commande suivante :
 
    ```shell
-   https://github.com/Conisla/myrhs.git
+   git clone https://github.com/Conisla/myrhs.git
+
+2. Mettre en place la BDD
+  Dans pgAdmin créer une database 'myrh' et créer la table salarie comme ceci :
+  
+  ```shell
+   CREATE TABLE salarie(
+   id_salarie INT,
+   first_name VARCHAR(50),
+   last_name VARCHAR(50),
+   phone_number VARCHAR(50),
+   email VARCHAR(50),
+   email_personnal VARCHAR(50),
+   gender VARCHAR(50),
+   PRIMARY KEY(id_salarie )
+   );
+
+4. Lancer l'API
+   ```shell
+    cd back
+    py manage.py makemigrations
+    py manage.py migrate
+    py manage.py runserver
+
+5. Lancer le front
+   ```shell
+    cd front
+    npm i
+    npm run serve
+
