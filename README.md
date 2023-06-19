@@ -32,8 +32,15 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
    PRIMARY KEY(id_salarie )
    );
 
-3. Lancer l'API
+3. Creer un environnement virtuel
    ```shell
+    cd myrhs
+    py venv -m .env
+    .env\Scripts\activate
+    
+4. Lancer l'API
+   ```shell
+   pip install -r requirements.txt
     cd back
     py manage.py makemigrations
     py manage.py migrate
