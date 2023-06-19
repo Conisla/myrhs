@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
    git clone https://github.com/Conisla/myrhs.git
 
 2. Mettre en place la BDD
-  Dans pgAdmin créer une database 'myrh' et créer la table salarie comme ceci :
+  Dans pgAdmin créer une database 'myrh' et créer la table 'salarie' comme ceci :
      ```shell
    CREATE TABLE salarie(
    id_salarie INT,
